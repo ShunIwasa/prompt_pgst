@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	
+<!-- BEGIN Metadata added by the Add-Meta-Tags WordPress plugin -->
+<meta name="description" content="PGSTとはプロジェクトの目的やゴール、それを達成するためにやるべきことを整理するためのTAM独自のフレームワークです。 クリエイティブテック・エージェンシーのTAMでは、クライアント企業様とマーケティングプランを共有する際にこのPGSTを使用しています。 PGSTの名称は * Purpose 目的 * Goal 数値目標 * Strategy 戦術 * Tactics 戦略 の頭..." />
+<meta name="keywords" content="tam,タム,tips note,制作, その他, マーケティング, 課題解決, フレームワーク" />
+<!-- END Metadata added by the Add-Meta-Tags WordPress plugin -->
+
+<title>PGSTとは？プロジェクトのゴールとやるべきことを明確にするフレームワーク ｜ Tips Note by TAM</title>
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Tips Note by TAM &raquo; フィード" href="https://www.tam-tam.co.jp/tipsnote/feed" />
+<link rel="alternate" type="application/rss+xml" title="Tips Note by TAM &raquo; コメントフィード" href="https://www.tam-tam.co.jp/tipsnote/comments/feed" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.tam-tam.co.jp/tipsnote/wpdata/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='easy_author_image-css'  href='https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/plugins/easy-author-image/css/easy-author-image.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css'  href='https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=7.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tipsnote-css'  href='https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/themes/tipsnote/css/common.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='googlewebfont-css'  href='https://fonts.googleapis.com/css?family=Nova+Round' type='text/css' media='all' />
+<script type='application/json' id="wpp-json">
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/www.tam-tam.co.jp\/tipsnote\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":17659,"token":"328fc41560","lang":0,"debug":0}
+</script>
+<script type='text/javascript' src='https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.3.6'></script>
+<link rel='https://api.w.org/' href='https://www.tam-tam.co.jp/tipsnote/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.tam-tam.co.jp/tipsnote/wpdata/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='dotenvとcross-envで環境変数を設定して開発環境の処理を切り替える' href='https://www.tam-tam.co.jp/tipsnote/program/post17589.html' />
+<link rel='next' title='チームデザイナー御用達！画面遷移図作成ツール『Overflow』【使い方編】' href='https://www.tam-tam.co.jp/tipsnote/tool/post17911.html' />
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="https://www.tam-tam.co.jp/tipsnote/others/post17659.html" />
+<link rel='shortlink' href='https://www.tam-tam.co.jp/tipsnote/?p=17659' />
+<link rel="alternate" type="application/json+oembed" href="https://www.tam-tam.co.jp/tipsnote/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tam-tam.co.jp%2Ftipsnote%2Fothers%2Fpost17659.html" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.tam-tam.co.jp/tipsnote/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tam-tam.co.jp%2Ftipsnote%2Fothers%2Fpost17659.html&#038;format=xml" />
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tips Note by TAM">
+<meta property="og:title" content="PGSTとは？プロジェクトのゴールとやるべきことを明確にするフレームワーク ｜ Tips Note by TAM">
+<meta property="og:url" content="http://www.tam-tam.co.jp/tipsnote/others/post17659.html">
+<meta property="og:description" content="TAM のテクニカルチームがお届けする WEB技術ブログ！">
+<meta property="og:image" content="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-1024x538.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tips_note">
+<meta name="twitter:title" content="PGSTとは？プロジェクトのゴールとやるべきことを明確にするフレームワーク ｜ Tips Note by TAM">
+<meta name="twitter:description" content="TAM のテクニカルチームがお届けする WEB技術ブログ！">
+<meta name="twitter:image" content="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-690x362.jpg">
+        <style>
+            @-webkit-keyframes bgslide {
+                from {
+                    background-position-x: 0;
+                }
+                to {
+                    background-position-x: -200%;
+                }
+            }
+
+            @keyframes bgslide {
+                    from {
+                        background-position-x: 0;
+                    }
+                    to {
+                        background-position-x: -200%;
+                    }
+            }
+
+            .wpp-widget-placeholder {
+                margin: 0 auto;
+                width: 60px;
+                height: 3px;
+                background: #dd3737;
+                background: -webkit-gradient(linear, left top, right top, from(#dd3737), color-stop(10%, #571313), to(#dd3737));
+                background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+                background-size: 200% auto;
+                border-radius: 3px;
+                -webkit-animation: bgslide 1s infinite linear;
+                animation: bgslide 1s infinite linear;
+            }
+        </style>
+        <link rel="amphtml" href="https://www.tam-tam.co.jp/tipsnote/others/post17659.html?amp=1"><link rel="icon" href="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2015/10/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2015/10/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2015/10/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2015/10/cropped-favicon-270x270.png" />
+</head>
+<body class="post-template-default single single-post postid-17659 single-format-standard">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KZFKSB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZFKSB');</script>
+<!-- End Google Tag Manager -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="l-main">
+		<div class="pure-g l-grid">
+
+			<div class="pure-u-1 pure-u-lg-17-24 entry">
+	<article>
+		<div class="main-box detail-box clfix">
+			<header class="detail-box-header pure-g">
+				<div class="detail-box-editor pure-u-1 pure-u-md-1-8">
+				<img class="avatar avatar-96 photo" width="64" height="64" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2017/10/editor_iida.png"/>				<span class="webfont">iida</span></div>
+				<div class="detail-box-header-titlearea pure-u-1 pure-u-sm-7-8 pure-u-md-1 pure-u-lg-7-8">
+					<time datetime="2020-06-26" class="detail-box-time">
+						<i class="fa fa-clock-o"></i>2020.06.26					</time>
+					<h1 class="detail-box-title">PGSTとは？プロジェクトのゴールとやるべきことを明確にするフレームワーク</h1>
+				</div><!-- /.pure-u-1 -->
+
+				<div class="pure-u-1">
+					<div class="termsbox is-single clfix">
+						<ul class="termsbox-category">
+							<li><a href="https://www.tam-tam.co.jp/tipsnote/category/others" rel="category tag">その他</a></li>
+						</ul>
+ 												<ul class="wp-tag-cloud">
+						<li><a href="https://www.tam-tam.co.jp/tipsnote/tag/%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0" rel="tag">マーケティング</a></li><li><a href="https://www.tam-tam.co.jp/tipsnote/tag/%e8%aa%b2%e9%a1%8c%e8%a7%a3%e6%b1%ba" rel="tag">課題解決</a></li><li><a href="https://www.tam-tam.co.jp/tipsnote/tag/%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e3%83%af%e3%83%bc%e3%82%af" rel="tag">フレームワーク</a></li>						</ul>
+					</div><!-- /.termsbox -->
+					<ul class="sharebuttons">
+	<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="tips_note">Tweet</a></li>
+	<li><div class="fb-like" data-href="https://www.tam-tam.co.jp/tipsnote/others/post17659.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+	<li><a href="http://b.hatena.ne.jp/entry/https://www.tam-tam.co.jp/tipsnote/others/post17659.html" target="_blank" class="hatena-bookmark-button" data-hatena-bookmark-title="ページタイトル" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+	<li class="sharebuttons-poket"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a></li>
+</ul>
+				</div><!-- /.pure-u-7-8 -->
+
+			</header>
+
+			<div class="detail-box-body">
+				<img width="690" height="362" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-690x362.jpg" class="pure-img wp-post-image" alt="" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-690x362.jpg 690w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-1024x538.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-300x158.jpg 300w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630-768x403.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/1200-630.jpg 1200w" sizes="(max-width: 690px) 100vw, 690px" /><div class="markdown"><p>PGSTとはプロジェクトの目的やゴール、それを達成するためにやるべきことを整理するためのTAM独自のフレームワークです。<br />
+クリエイティブテック・エージェンシーのTAMでは、クライアント企業様とマーケティングプランを共有する際にこのPGSTを使用しています。</p>
+<p>PGSTの名称は</p>
+<ul>
+<li>Purpose 目的</li>
+<li>Goal 数値目標</li>
+<li>Strategy 戦術</li>
+<li>Tactics 戦略</li>
+</ul>
+<p>の頭文字を取ったものです。</p>
+<p>PGST作成にはこのようなシートを使います。</p>
+<img class="aligncenter wp-image-17661 size-medium" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst01-690x339.jpg" alt="PGSTシート" width="690" height="339" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst01-690x339.jpg 690w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst01-1024x503.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst01-768x377.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst01.jpg 1282w" sizes="(max-width: 690px) 100vw, 690px" />
+<p>左から順に、Purpose（目的）、Goal（数値目標）、Strategy（戦略）、Tactics（戦術）の列を並べたシートを使用して、数値目標を達成するために必要な戦略・戦術をブレイクダウンして整理していきます。</p>
+<h2>どんなことに役立つ？</h2>
+<p>TAMではプロモーション企画やWebサイト制作、人事査定のための個人目標の設定まで、ほぼ全てのプロジェクトでPGSTを使用して目標やToDoを整理します。<br />
+PGSTは”ゴールに向かい、やるべきことを決める必要のある、あらゆるプロジェクト”に応用することができます。</p>
+<p>PGSTはプロジェクトの振り返りを行うときにも役立ちます。<br />
+TacticsやStrategyの達成度・実現度を振り返ることで、目標達成にどれだけ近づいたか、方向性の異なるがんばり方をしていないかを確かめることがことができます。</p>
+<h2>なぜPGSTが必要なのか？</h2>
+<p>プロジェクトを進めているうちに様々な障壁にぶつかり、「手段が目的化してしまう」ことがありますよね。<br />
+目指しているゴールにほとんど関係のないアクションを思い込みによって実行し続けてしまうこともあります。<br />
+思いつきの施策に片っ端から手を付けていると、いくら時間やお金があってもたりません。<br />
+PGSTがあれば，いきあたりばったりのアクションではなく、最短距離で目的を達成するためのアクションを取ることができるようになります。</p>
+<h2>PGSTを作る手順</h2>
+<p><strong>１．プロジェクトのPurpose（目的）とGoal（数値目標）を決める。</strong></p>
+<p>全てのプロジェクトには、成し遂げる目的、そして数値目標があるはずです。</p>
+<p>PurposeとGoalがずれてしまうとそのPGST全てが意味をなさなくなります。クライアントや上司とPGST認識を合わせる際は、ここにずれが無いかを必ず確認しましょう。</p>
+<p>Purposeになりうる項目の例：</p>
+<ul>
+    <li>売上の増加</li>
+    <li>新商品プロモーションの成功</li>
+    <li>ユーザーに利用される新サービスの開発</li>
+    <li>必要な人材の採用（人事）</li>
+    <li>チームリーダーへの昇進（人事） など</li>
+</ul>
+<p>Goalは、Purposeの達成を計測できるように数値化した物で、KGI（重要業績評価指数）と呼ぶこともあります。<br />
+「ブランディング」のような数値化が難しいPurposeの場合、Goalには「アンケートで”好意的”の回答を80%以上獲得する」「指名検索流入の割合を50%に高める」などのような代替指標を用いることもあります。</p>
+<p>基本的にはPurposeとGoalはそれぞれひとつずつ設定するのがいいでしょう。<br />
+今回は「クリスマス商戦で売上を伸ばす」をPurposeとしてPGSTを作ってみます。</p>
+<img class="aligncenter wp-image-17667 size-medium" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/PGST02-1-446x362.jpg" alt="PGST_目的と数値目標を入れる" width="446" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/PGST02-1-446x362.jpg 446w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/PGST02-1-1024x831.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/PGST02-1-768x623.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/PGST02-1.jpg 1272w" sizes="(max-width: 446px) 100vw, 446px" />
+<p><strong>２．Goal（数値目標を）達成するために必要なStrategy（戦略）を入れる</strong></p>
+<p>Goalを達成するためにはどのような戦略が必要か、Strategyを書き出します。<br />
+このStrategyを実現できたかどうかがいわゆるKPI（重要業績評価指数）となります。</p>
+<img class="aligncenter size-medium wp-image-17664" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst03-448x362.jpg" alt="PGST_戦略を入れる" width="448" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst03-448x362.jpg 448w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst03-1024x827.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst03-768x620.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst03.jpg 1276w" sizes="(max-width: 448px) 100vw, 448px" />
+<p><strong>３．Strategy（戦略）を実現するために必要なTactics（戦術）を入れる</strong></p>
+<p>Strategyを実現するために、どんな戦術を実行する必要があるかを書き出します。</p>
+<img class="aligncenter size-medium wp-image-17663" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst04-448x362.jpg" alt="PGST_戦術を入れる" width="448" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst04-448x362.jpg 448w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst04-1024x827.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst04-768x620.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst04.jpg 1276w" sizes="(max-width: 448px) 100vw, 448px" />
+<p>Tacticsを具体化したものがActionPlan（施策）です。<br />
+ActionPlanを集めたものがToDoリストになります。</p>
+<img class="aligncenter size-medium wp-image-17665" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05-576x362.jpg" alt="PGST_アクションプランを入れる" width="576" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05-576x362.jpg 576w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05-1024x643.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05-768x482.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05-1536x965.jpg 1536w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst05.jpg 1640w" sizes="(max-width: 576px) 100vw, 576px" />
+<p><strong>４．Tacticsから遡って、Goalが達成できるか検証する</strong></p>
+<p>シートがひととおり埋まったら、今度はTacticsを実行したらStrategyが実現したことになるかどうか？ そしてStrategyが全部実現したらGoalが達成できるかどうか？を下から遡って考えてみます。 上流・下流を行ったり来たりしてやるべきことを抜け漏れなく抽出していきます。</p>
+<img class="aligncenter size-medium wp-image-17666" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06-554x362.jpg" alt="PGST_戦術からさかのぼって確認する" width="554" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06-554x362.jpg 554w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06-1024x669.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06-768x501.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06-1536x1003.jpg 1536w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst06.jpg 1642w" sizes="(max-width: 554px) 100vw, 554px" />
+<p><strong>５．Tactics（戦術）に実行の優先順位をつける</strong></p>
+<p>ここまでで「このTacticsを全部こなせばGoalが達成できる！」というPGSTができたと思います。<br />
+しかし、現実にはリソース的問題や費用的問題で、全てのTacticsやActionPlanを一気に実行することができないことがほとんどです。<br />
+なるべく小さなコストで、Strategyへのインパクトが大きいTacticsから実行するように優先順位をつけます。</p>
+<p><strong>６．関係者に配布し、常に確認できるようにする</strong></p>
+<p>PGSTはプロジェクトの進行中、何度も振り返って達成度合いを確認する必要があります。<br />
+作っただけで満足せずに、PCの壁紙に設定したり、印刷して壁に張り出したりして、常に進捗を意識できるようにしましょう。</p>
+<h2>PGSTを作るコツ</h2>
+<p><strong>１．なるべくMECEに作る</strong></p>
+<p>Strategy（戦略）とTactics（戦術）を考えるときに大切なのが、MECE、つまり抜け・漏れ・ダブリなく要素を出し切ることです。</p>
+<img class="aligncenter wp-image-17660 size-medium" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst07-508x362.jpg" alt="MECEミーシー" width="508" height="362" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst07-508x362.jpg 508w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst07.jpg 749w" sizes="(max-width: 508px) 100vw, 508px" />
+<p>Tacticsの項目を全部達成すると、Strategyが実現される。<br />
+そしてStrategyの項目を全部達成すると、Goalが実現される。<br />
+という関係性になっているのがPGSTの理想形です。</p>
+<p>現実にはやってみないとわからない施策もあるので、必ずしも完璧なMECEにすることは難しいのですが、Tacticsを積み上げることで上位の項目が達成されるかどうかをチェックしてみてください。</p>
+<p><strong>２．StrategyとTacticsの違いを意識する</strong></p>
+<p>PGST作成でよく躓くのが、StrategyとTacticsをどう分けるかです。<br />
+これはある程度数作ると、StrategyかTacticsか自分の中で粒度の規準ができてくるのですが、先にSとTを明確に分類してしまうのもいいでしょう。</p>
+<p>私がよく使うのは</p>
+<ul>
+<li>Strategy（戦略）は理想の状態</li>
+<li>Tactics（戦術）はそれを実現するアクション</li>
+</ul>
+<p>という分け方です。</p>
+<p>例えばPurpose「ファンを増やす」ためにStrategy「ユーザーが2ヶ月に1度Webサイトを訪問してくれる”状態”」とします。そのためのTacticsとしては「SNSで発信して生活の中でブランドを想起してもらう」とか「定期的にWebにログインすることでポイントがもらえる仕組みを作る」などが挙げられます。</p>
+<p><strong>３．プロジェクトによっては粒度の異なるPGSTを複数作る</strong></p>
+<p>PGSTは1つのプロジェクトの中で1つだけとは限りません。<br />
+「売上を上げる」という大きな目標を設定すると、SやTの粒度が大きすぎたり、莫大な量になってしまうため、そのまま現場での施策に落とし込むことが難しくなります。<br />
+そんなときはSやTをPurposeとした粒度の小さい”子PGST”を作ることで、直近で手を付けるべきことが見えてきます。<br />
+これは元の大きなプロジェクトの中に子プロジェクトを作ることと同義になります。</p>
+<img class="aligncenter wp-image-17668 size-medium" src="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst08-690x336.jpg" alt="子PGSTを作る" width="690" height="336" srcset="https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst08-690x336.jpg 690w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst08-1024x499.jpg 1024w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst08-768x374.jpg 768w, https://www.tam-tam.co.jp/tipsnote/wpdata/wp-content/uploads/2020/04/pgst08.jpg 1190w" sizes="(max-width: 690px) 100vw, 690px" />
+<h2>PGSTがプロジェクトの成功につながる</h2>
+<p>PGSTの作り方・使い方はわかりましたか？</p>
+<p>やるべきことが綺麗に整理されたPGSTがあれば</p>
+<ul>
+    <li>複数のチームやメンバーで目的やタスクを共有できる</li>
+    <li>目標達成まで最短距離で進めることができる</li>
+    <li>不要なことに手を付けなくて済むのでコストを削減できる</li>
+    <li>メンバーがやるべきことを認識して自発的に動ける</li>
+</ul>
+<p>などのメリットがあります。<br />
+ぜひ今後のプロジェクトにPGSTを取り入れてみてください。</p>
+<p>TAMではPGSTを作るワークショップ研修も行っています。<br />
+もっと知りたい！という方はお気軽にお問い合わせください。</p></div>			</div><!-- /.detail-box-body -->
+
+			<ul class="sharebuttons">
+	<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="tips_note">Tweet</a></li>
+	<li><div class="fb-like" data-href="https://www.tam-tam.co.jp/tipsnote/others/post17659.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+	<li><a href="http://b.hatena.ne.jp/entry/https://www.tam-tam.co.jp/tipsnote/others/post17659.html" target="_blank" class="hatena-bookmark-button" data-hatena-bookmark-title="ページタイトル" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+	<li class="sharebuttons-poket"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a></li>
+</ul>
+		</div>
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.225 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2023-11-13 12:37:53 -->
+
+<!-- super cache -->
